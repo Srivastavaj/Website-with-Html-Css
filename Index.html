@@ -12,26 +12,26 @@
     <div class="header">
         <nav>
             <div class="logo">
-                <img src="Asstes/LOGO.png" alt="Alpha">
+                <img src="Asstes/LOGO.webp" alt="Alpha">
             </div>
             <ul class="navlist">
                 <div class="navlinks">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
+                    <li><a href="Home">Home</a></li>
+                    <li><a href="About">About</a></li>
+                    <li><a href="Services">Services</a></li>
+                    <li><a href="Contact">Contact</a></li>
 
                 </div>
                 <div class="navbuttons">
-                    <li>Log In</li>
-                    <li class="primarybtn">Signup</li>
+                    <li class="Login"><a href="Log In">Log In</a></li>
+                    <li class="Sign"><a href="Signup">Signup</a></li>
                 </div>
 
             </ul>
         </nav>
         <div class="headercontent" id="content">
             <div class="introtext">
-                <h1>Learn Your <br> Best Course</h1>
+                <h1>Learn Your <br> <span id="element">Best Course</span></h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem qui dicta voluptas illo impedit amet
                     similique accusantium autem atque porro!</p>
                 <div class="buttons">
@@ -44,6 +44,15 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Best Course','Best Classes', 'Best Tutorials'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
 
 </html>
